@@ -1,0 +1,497 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: black;
+}
+
+body{
+    background-color: rgb(248, 199, 228);
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+
+#container{
+    background-color: white;
+    width: 1100px;
+    height: 90vh;
+    
+    border: solid black 7px;
+    border-radius: 20px;
+    overflow: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+header{
+    height: 500px;
+    padding: 20px 40px 20px 40px;
+    position: relative;
+}
+
+
+#logo{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+#logo img{
+    width: 60px;
+    margin-right: 15px;
+}
+
+
+#infos{
+    background-color: #93a4c9;
+    width: 0px;
+    height: 40px;
+    border-radius: 8px;
+
+    position: absolute;
+    top: 50px;
+    right: 35px;
+    transform: translateY(-50%);
+
+    display: flex;
+    justify-content: space-around;
+
+    transition: 0.5s;
+}
+
+
+#botaoInfos{
+    width: 140px;
+    height: 40px;
+    background-color: #abc5ff;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    transform: translateY(-50%);
+}
+
+
+#blocoInfo1, #blocoInfo2, #blocoInfo3{
+    background-color: rgb(61, 59, 59);
+    width: 105px;
+    height: 120px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+
+    position: absolute;
+    top: 5px;
+
+    display: none;
+}
+
+
+#blocoInfo1 p, #blocoInfo2 p, #blocoInfo3 p{
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px
+}
+
+
+#blocoInfo1{
+    left: 3px;
+    z-index: -1;
+}
+
+
+#blocoInfo2{
+    width: 128px;
+    left: 112px;
+    z-index: -1;
+}
+
+
+#blocoInfo3{
+    width: 120px;
+    left: 337px;
+    z-index: -1;
+}
+
+.textoInfos{
+    display: none;
+
+    height: 100%;
+    color: white;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+
+#telaSobreMim{
+    width: 100%;
+    padding: 50px 10px 50px 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    display: none;
+}
+
+
+#telaSobreMim p:first-child{
+    font-size: 50px;
+    color: rgb(30, 31, 32);
+}
+
+#telaSobreMim p:last-of-type{
+    font-size: 20px;
+    color: #2a2a2b;
+    width: 90%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.botaoFechar{
+    width: 150px;
+    height: 30px;
+    background-color: red;
+    border: solid black 3px;
+    margin-top: 30px;
+}
+
+
+#telaInfos{
+    width: 100%;
+    height: 100%;
+    padding: 50px 10px 50px 10px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    display: none;
+}
+
+
+#telaInfos p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+
+#containerApresentacao{
+    background-color: rgb(218, 140, 186);
+    width: 95%;
+    border-radius: 20px;
+    
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px;
+
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+
+    z-index: -1;
+}
+
+
+#containerApresentacao  div:first-child{
+    padding-right: 50px;
+    position: relative;
+}
+
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS';
+}
+
+
+#containerApresentacao span{
+    color: rgb(251, 255, 0);
+}
+
+
+#containerApresentacao p{
+    font-weight: bold;
+    margin-top: 35px;
+    
+}
+
+
+#containerApresentacao button{
+    width: 140px;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+
+    background-color: #4169be;
+    border: solid black 3px;
+    border-radius: 5px;
+
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%);
+
+    cursor: pointer;
+}
+
+
+#containerApresentacao img{
+    width: 220px;
+    text-align: center;
+}
+
+
+#containerApresentacao  div:last-child{
+    text-align: center;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    #container{
+        width: 90%;
+    }
+
+
+
+    header{
+        height: 620px;
+    }
+
+
+    #containerApresentacao{
+        min-height: 460px;
+    }
+
+
+    #containerApresentacao p{
+        font-size: 2vw;
+    }
+
+
+    #containerApresentacao  div:first-child{
+        position: static;
+    }
+}
+
+
+@media screen and (max-width: 745px){
+    header{
+        display: flex;
+        justify-content: center;
+        height: 700px;
+    }
+
+    header p{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #logo img{
+        margin-right: 0;
+    }
+
+
+    #botaoInfos{
+        top: 150px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+
+@media screen and (max-width: 722px){
+    #containerApresentacao{
+        grid-template: auto auto / 1fr;
+        padding-bottom: 100px;
+        margin-top: 2000px;
+    }
+
+
+    header{
+        height: 900px;
+    }
+
+
+    #containerApresentacao p{
+        font-size: 18px;
+    }
+
+
+    #containerApresentacao  div:first-child{
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    
+    #containerApresentacao button{
+        bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 635px){
+    header{
+        height: 1000px;
+    }
+
+}
+
+
+@media screen and (max-width: 460px){
+    header{
+        height: 1050px;
+    }
+
+    #logo{
+        font-size: 40px;
+    }
+    
+    
+    #logo img{
+        width: 50px;
+    }
+
+
+    #botaoInfos{
+        top: 130px;   
+    }
+}
+
+
+@media screen and (max-width: 390px){
+    header{
+        height: 1100px;
+    }
+}
+
+
+@media screen and (max-width: 360px){
+    #containerApresentacao img{
+        width: 190px;
+    }
+}
+
+
+@media screen and (max-width: 333px){
+    header{
+        height: 1150px;
+    }
+
+}
+
+
+@media screen and (max-width: 315px){
+    header{
+        height: 1250px;
+    }
+
+}
+
+
+@media screen and (max-width: 345px){
+    #telaSobreMim p:first-child{
+        font-size: 38px;
+    }
+
+    #telaSobreMim p:last-of-type{
+        text-align: start;
+    }
+}
+
+
+@media screen and (max-width: 274px){
+    #logo{
+        font-size: 30px;
+    }
+    
+    
+    #logo img{
+        width: 40px;
+    }
+
+
+    #botaoInfos{
+        top: 110px;
+    }
+
+
+    header{
+        padding: 20px 0 0 0;
+        height: 900px;
+    }
+
+
+    h1{
+        font-size: 25px;
+    }
+
+
+    #containerApresentacao p{
+        font-size: 13px;
+    }
+
+
+    #containerApresentacao img{
+        width: 120px;
+    }
+}
+
+
+@media screen and (max-width: 266px){
+    header{
+        height: 1000px;
+    }
+
+}
+
+
+@media screen and (max-width: 236px){
+    header{
+        height: 1050px;
+    }
+}
+
+
+@media screen and (max-width: 226px){
+    header{
+        height: 960px;
+    }
+
+
+    #container{
+        width: 100%;
+    }
+}
