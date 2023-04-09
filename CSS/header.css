@@ -5,6 +5,7 @@
     text-decoration: none;
     box-sizing: border-box;
     color: black;
+    cursor: default;
 }
 
 body{
@@ -75,6 +76,7 @@ header{
     font-weight: bold;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
 
     position: absolute;
     top: 50px;
@@ -174,6 +176,7 @@ header{
     background-color: red;
     border: solid black 3px;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 
