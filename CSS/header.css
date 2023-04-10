@@ -253,7 +253,7 @@ h1{
 }
 
 
-#containerApresentacao button{
+#containerApresentacao a button{
     width: 140px;
     height: 40px;
     font-size: 15px;
@@ -270,6 +270,7 @@ h1{
     transform: translate(-50%);
 
     cursor: pointer;
+    z-index: 999;
 }
 
 
