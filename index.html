@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="./CSS/header.css">
     <link rel="stylesheet" href="./CSS/section1.css">
     <link rel="stylesheet" href="./CSS/section2.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./IMG/camisaIcon.png">
     <title>Loja De Roupa</title>
@@ -60,7 +61,7 @@
 
         <header>
 
-            <p id="logo"><img src="./IMG/camisaIcon.png">StyleSheet</p>
+            <p id="logo"><img src="./IMG/camisaIcon.png" alt="Logo StyleSheet">StyleSheet</p>
 
             <div id="infos">
 
@@ -127,7 +128,7 @@
 
                 <div>
 
-                   <img src="./IMG/modelo.png">
+                   <img src="./IMG/modelo.png" alt="Modelo">
 
                 </div>
 
@@ -148,7 +149,7 @@
 
             <div class="sobreProdutos cor1">
 
-                <div><img src="./IMG/tecido.png"></div>
+                <div><img src="./IMG/tecido.png" alt="" aria-hidden="true"></div>
 
                 <div>
                 <p>TECIDO DE QUALIDADE</p>
@@ -162,7 +163,7 @@
 
             <div class="sobreProdutos cor2">
 
-                <div><img src="./IMG/entrega.png"></div>
+                <div><img src="./IMG/entrega.png" alt="" aria-hidden="true"></div>
 
                 <div>
                 <p>ENTRAGA RÁPIDA PARA TODO BRASIL</p>
@@ -176,7 +177,7 @@
 
             <div class="sobreProdutos cor3">
 
-                <div><img src="./IMG/trofeu.png"></div>
+                <div><img src="./IMG/trofeu.png" alt="" aria-hidden="true"></div>
 
                 <div>
                 <p>MARCA PREMIADA</p>
@@ -190,7 +191,7 @@
 
             <div class="sobreProdutos cor4">
 
-                <div><img src="./IMG/satisfeito.png"></div>
+                <div><img src="./IMG/satisfeito.png" alt="" aria-hidden="true"></div>
 
                 <div>
                 <p>CLIENTES SATISFEITOS</p>
@@ -212,20 +213,20 @@
             </div>
 
 
-        <div class="containerCarrossel">
+        <div class="containerCarrossel" id="carrossel1">
 
             <p>Camisas</p>
 
-            <button class="proxioSlide"></button>
+            <button class="proximoSlide" id="proximoSlideA"></button>
 
-            <button class="slideAnterior"></button>
+            <button class="slideAnterior" id="slideAnteriorA"></button>
 
 
-            <div class="carrosselSlide mostrando">
+            <div class="carrosselSlide" id="slideCamisa1">
 
                 <div class="containerSlide">
 
-                <div><img src="./IMG/camisa1.jpg"></div>
+                <div><img src="./IMG/camisa1.jpg" alt="Camisa branca padrão"></div>
 
                 <p>De&nbsp;<span> R$ 120,00</span></p>
 
@@ -235,15 +236,15 @@
 
                 </div>
 
-<!--                 
+                
             </div>
 
 
-             <div class="carrosselSlide">
+             <div class="carrosselSlide" id="slideCamisa2">
 
                 <div class="containerSlide">
 
-                <div><img src="./IMG/camisa2.jpg"></div>
+                <div><img src="./IMG/camisa2.jpg" alt="Camisa preta padrão"></div>
 
                 <p>De&nbsp;<span> R$ 130,00</span></p>
 
@@ -251,17 +252,17 @@
 
                 <p>Disponível do tamanho P a G</p>
 
-                </div> -->
+                </div> 
                 
                 
             </div>
 
 
-            <div class="carrosselSlide">
+            <div class="carrosselSlide" id="slideCamisa3">
 
                 <div class="containerSlide">
 
-                <div><img src="./IMG/camisa3.jpg"></div>
+                <div><img src="./IMG/camisa3.jpg" alt="Camisa preta estampa escrito 'blablabla'"></div>
 
                 <p>De&nbsp;<span> R$ 120,00</span></p>
 
@@ -282,16 +283,16 @@
 
             <p>Blusas</p>
 
-            <button class="proxioSlide"></button>
+            <button class="proximoSlide" id="proximoSlideB"></button>
 
-            <button class="slideAnterior"></button>
+            <button class="slideAnterior" id="slideAnteriorB"></button>
 
 
             <div class="carrosselSlide mostrando">
 
-                <div class="containerSlide">
+                <div class="containerSlide" id="slideBlusa1">
 
-                <div><img src="./IMG/blusa1.jpg"></div>
+                <div><img src="./IMG/blusa1.jpg" alt="Blusa branca padrão"></div>
 
                 <p>De&nbsp;<span>R$ 150,00</span></p>
 
@@ -305,11 +306,11 @@
             </div>
 
 
-            <div class="carrosselSlide">
+            <div class="carrosselSlide" id="slideBlusa2">
 
                 <div class="containerSlide">
 
-                <div><img src="./IMG/blusa2.jpg"></div>
+                <div><img src="./IMG/blusa2.jpg" alt="Blusa preta padrão"></div>
 
                 <p>De&nbsp;<span>R$ 182,00</span></p>
 
@@ -323,11 +324,11 @@
             </div>
 
 
-            <div class="carrosselSlide">
+            <div class="carrosselSlide" id="slideBlusa3">
 
                 <div class="containerSlide">
 
-                <div><img src="./IMG/blusa3.jpg"></div>
+                <div><img src="./IMG/blusa3.jpg" alt="Blusa cinza padrão"></div>
 
                 <p>De&nbsp;<span>R$ 145,00</span></p>
 
@@ -348,16 +349,16 @@
 
             <p>Tênis</p>
 
-            <button class="proxioSlide"></button>
+            <button class="proximoSlide" id="proximoSlideC"></button>
 
-            <button class="slideAnterior"></button>
+            <button class="slideAnterior" id="slideAnteriorC"></button>
 
 
             <div class="carrosselSlide mostrando">
 
-                <div class="containerSlide">
+                <div class="containerSlide" id="slideTenis1">
 
-                <div><img src="./IMG/tenis1.jpg"></div>
+                <div><img src="./IMG/tenis1.jpg" alt="Tênis branco padrão"></div>
 
                 <p>De&nbsp;<span>R$ 80,00</span></p>
 
@@ -371,11 +372,11 @@
             </div>
 
 
-            <div class="carrosselSlide">
+            <div class="carrosselSlide" id="slideTenis2">
 
                 <div class="containerSlide">
 
-                <div><img src="./IMG/tenis2.jpg"></div>
+                <div><img src="./IMG/tenis2.jpg" alt="Tênis rosa com detalhes brancos"></div>
 
                 <p>De&nbsp;<span>R$ 100,00</span></p>
 
@@ -389,11 +390,11 @@
             </div>
 
 
-            <div class="carrosselSlide">
+            <div class="carrosselSlide" id="slideTenis3">
 
                 <div class="containerSlide">
 
-                <div><img src="./IMG/tenis3.png"></div>
+                <div><img src="./IMG/tenis3.png" alt="Tênis preto padrão"></div>
 
                 <p>De&nbsp;<span>R$ 105,00</span></p>
 
@@ -414,6 +415,46 @@
 
         </main>
 
+
+        <footer>
+
+            <p>Créditos das imagens e icons que usei nesse projeto</p>
+
+
+            <a href="https://www.freepik.com/free-photo/white-t-shirts-with-copy-space-gray-background_15667327.htm#query=camisa&position=2&from_view=search&track=sph">Camisa 1 <img src="./IMG/camisa1.jpg"></a> 
+
+            <a href="https://www.freepik.com/free-photo/black-t-shirts-with-copy-space_15474803.htm#query=camisa&position=3&from_view=search&track=sph">Camisa 2 <img src="./IMG/camisa2.jpg"></a>
+        
+            <a href="https://www.freepik.com/free-psd/t-shirts-mockup-psd-black_17860378.htm#from_view=detail_alsolike">Camisa 3 <img src="./IMG/camisa3.jpg"></a>
+        
+            <a href="https://www.freepik.com/free-photo/white-high-top-sneakers-unisex-footwear-fashion_15850196.htm#query=sapato&position=6&from_view=search&track=sph">Sapato 1 <img src="./IMG/tenis1.jpg"></a>
+        
+            <a href="https://www.freepik.com/free-photo/pink-canvas-sneakers-with-polka-dot-unisex-footwear-fashion_15850223.htm#page=3&query=sapato&position=12&from_view=search&track=sph">Sapato 2 <img src="./IMG/tenis2.jpg"></a>
+        
+            <a href="https://www.freepik.com/free-photo/one-black-sneaker-shoe-isolated-white_21061369.htm#query=sapato&position=4&from_view=search&track=sph">Sapato 3 <img src="./IMG/tenis3.png"></a>
+        
+            <a href="https://www.freepik.com/free-photo/back-side-black-hoodie_13237306.htm?query=pants">Blusa 1 <img src="./IMG/blusa1.jpg"></a>
+        
+            <a href="https://www.freepik.com/free-photo/back-side-white-hoodie_13237307.htm?query=pants#from_view=detail_alsolike">Blusa 2 <img src="./IMG/blusa2.jpg"></a>
+        
+            <a href="https://www.freepik.com/free-photo/isolated-grey-hoodie_13237321.htm">Blusa 3 <img src="./IMG/blusa3.jpg"></a>
+        
+            <a href="https://www.flaticon.com/br/icones-gratis/camisa" title="camisa ícones">Camisa icon <img src="./IMG/camisaIcon.png"></a>
+        
+            <a href="https://www.freepik.com/free-photo/portrait-smiley-man_12417809.htm#query=modelo%20roupa%20homem&position=7&from_view=search&track=ais">Modelo <img src="./IMG/modelo.png"></a>
+        
+            <a href="https://www.flaticon.com/br/icones-gratis/trofeu" title="trofeu ícones">Trofeu <img src="./IMG/trofeu.png"></a>
+        
+            <a href="https://www.flaticon.com/br/icones-gratis/tecidos" title="tecidos ícones">Tecidos <img src="./IMG/tecido.png"></a>
+        
+            <a href="https://www.flaticon.com/br/icones-gratis/entrega" title="entrega ícones">Entrega <img src="./IMG/entrega.png"></a>
+        
+            <a href="https://www.flaticon.com/br/icones-gratis/mulher" title="mulher ícones">Satisfeito <img src="./IMG/satisfeito.png"></a>
+        
+            <a href="https://www.flaticon.com/br/icones-gratis/ponta-de-flecha" title="ponta de flecha ícones">Seta <img src="./IMG/setaD.png"></a>
+
+        </footer>
+
     </div>
 
 
@@ -426,37 +467,7 @@
 </html>
 
 
-<!-- <a href="https://www.freepik.com/free-photo/white-t-shirts-with-copy-space-gray-background_15667327.htm#query=camisa&position=2&from_view=search&track=sph">Camisa 1</a> 
-
-    <a href="https://www.freepik.com/free-photo/black-t-shirts-with-copy-space_15474803.htm#query=camisa&position=3&from_view=search&track=sph">Camisa 2</a>
-
-    <a href="https://www.freepik.com/free-psd/t-shirts-mockup-psd-black_17860378.htm#from_view=detail_alsolike">Camisa 3</a>
-
-    <a href="https://www.freepik.com/free-photo/white-high-top-sneakers-unisex-footwear-fashion_15850196.htm#query=sapato&position=6&from_view=search&track=sph">Sapato 1</a>
-
-    <a href="https://www.freepik.com/free-photo/pink-canvas-sneakers-with-polka-dot-unisex-footwear-fashion_15850223.htm#page=3&query=sapato&position=12&from_view=search&track=sph">Sapato 2</a>
-
-    <a href="https://www.freepik.com/free-photo/one-black-sneaker-shoe-isolated-white_21061369.htm#query=sapato&position=4&from_view=search&track=sph">Sapato 3</a>
-
-    <a href="https://www.freepik.com/free-photo/back-side-black-hoodie_13237306.htm?query=pants">Blusa 1</a>
-
-    <a href="https://www.freepik.com/free-photo/back-side-white-hoodie_13237307.htm?query=pants#from_view=detail_alsolike">Blusa 2</a>
-
-    <a href="https://www.freepik.com/free-photo/isolated-grey-hoodie_13237321.htm">Blusa 3</a>
-
-    <a href="https://www.flaticon.com/br/icones-gratis/camisa" title="camisa ícones">Camisa icon</a>
-
-    <a href="https://www.freepik.com/free-photo/portrait-smiley-man_12417809.htm#query=modelo%20roupa%20homem&position=7&from_view=search&track=ais">Modelo</a>
-
-    <a href="https://www.flaticon.com/br/icones-gratis/trofeu" title="trofeu ícones">Trofeu</a>
-
-    <a href="https://www.flaticon.com/br/icones-gratis/tecidos" title="tecidos ícones">Tecidos</a>
-
-    <a href="https://www.flaticon.com/br/icones-gratis/entrega" title="entrega ícones">Entrega</a>
-
-    <a href="https://www.flaticon.com/br/icones-gratis/mulher" title="mulher ícones">Satisfeito</a>
-
-    <a href="https://www.flaticon.com/br/icones-gratis/ponta-de-flecha" title="ponta de flecha ícones">Seta</a>
+  
 
 
 
@@ -472,4 +483,3 @@
 
 
 
--->

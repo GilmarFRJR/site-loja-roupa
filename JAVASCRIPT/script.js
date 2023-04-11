@@ -27,14 +27,14 @@ $('#botaoInfos').on('click', function() {
             
     } else{
   
-        $('#botaoInfos').prop('disabled', true)
+        $('#botaoInfos').prop('desativado', true)
 
         abrirInformacos()
         $('#logo').fadeToggle()
 
         setTimeout(function(){
 
-            $('#botaoInfos').prop('disabled', false)
+            $('#botaoInfos').prop('desativado', false)
         }, 600)
 
     }})
@@ -136,11 +136,179 @@ $('#fecharTelaInfos').on('click',function(){
 infosTelaPequena()
 
 
-
-
-
-
-
-
-
 // header fim----------------------------------------------------------------------------------
+
+
+
+// carrossel começo----------------------------------------------------------------------------------
+
+
+    $('#slideCamisa2').hide()
+
+    $('#slideCamisa3').hide()
+
+    $('#slideBlusa2').hide()
+
+    $('#slideBlusa3').hide()
+
+    $('#slideTenis2').hide()
+
+    $('#slideTenis3').hide()
+    
+    
+    $('#proximoSlideA').on('click', function() {
+
+        if($('#slideAnteriorA').hasClass('desativado')){
+
+            $('#slideAnteriorA').removeClass('desativado')
+
+            $('#slideCamisa1').fadeOut(600)
+
+            $('#slideCamisa2').fadeIn(600)
+
+        } else{
+
+            $('#proximoSlideA').addClass('desativado')
+
+            $('#slideCamisa2').fadeOut(600)
+
+            $('#slideCamisa3').fadeIn(600)
+
+        }
+
+    })
+    
+   
+    $('#slideAnteriorA').click(function() {
+
+        if($('#proximoSlideA').hasClass('desativado')){
+
+            $('#proximoSlideA').removeClass('desativado')
+
+            $('#slideCamisa3').fadeOut(600)
+
+            $('#slideCamisa2').fadeIn(600)
+
+        } else{
+
+            $('#slideAnteriorA').addClass('desativado')
+
+            $('#slideCamisa2').fadeOut(600)
+
+            $('#slideCamisa1').fadeIn(600)
+
+        }
+
+    })
+       
+
+
+
+
+
+    $('#proximoSlideB').on('click', function() {
+
+        if($('#slideAnteriorB').hasClass('desativado')){
+
+            $('#slideAnteriorB').removeClass('desativado')
+
+            $('#slideBlusa1').fadeOut(600)
+
+            $('#slideBlusa2').fadeIn(600)
+
+        } else{
+
+            $('#proximoSlideB').addClass('desativado')
+
+            $('#slideBlusa2').fadeOut(600)
+
+            $('#slideBlusa3').fadeIn(600)
+
+        }
+
+    })
+    
+   
+    $('#slideAnteriorB').click(function() {
+
+        if($('#proximoSlideB').hasClass('desativado')){
+
+            $('#proximoSlideB').removeClass('desativado')
+
+            $('#slideBlusa3').fadeOut(600)
+
+            $('#slideBlusa2').fadeIn(600)
+
+        } else{
+
+            $('#slideAnteriorB').addClass('desativado')
+
+            $('#slideBlusa2').fadeOut(600)
+
+            $('#slideBlusa1').fadeIn(600)
+
+        }
+
+    })
+       
+
+
+
+
+
+    $('#proximoSlideC').on('click', function() {
+
+        if($('#slideAnteriorC').hasClass('desativado')){
+
+            $('#slideAnteriorC').removeClass('desativado')
+
+            $('#slideTenis1').fadeOut(600)
+
+            $('#slideTenis2').fadeIn(600)
+
+        } else{
+
+            $('#proximoSlideC').addClass('desativado')
+
+            $('#slideTenis2').fadeOut(600)
+
+            $('#slideTenis3').fadeIn(600)
+
+        }
+
+    })
+    
+   
+    $('#slideAnteriorC').click(function() {
+
+        if($('#proximoSlideC').hasClass('desativado')){
+
+            $('#proximoSlideC').removeClass('desativado')
+
+            $('#slideTenis3').fadeOut(600)
+
+            $('#slideTenis2').fadeIn(600)
+
+        } else{
+
+            $('#slideAnteriorC').addClass('desativado')
+
+            $('#slideTenis2').fadeOut(600)
+
+            $('#slideTenis1').fadeIn(600)
+
+        }
+
+    })
+       
+    
+   
+    $('#slideAnteriorA').addClass('desativado')
+
+    $('#slideAnteriorB').addClass('desativado')
+
+    $('#slideAnteriorC').addClass('desativado')
+
+
+
+// carrossel fim----------------------------------------------------------------------------------
